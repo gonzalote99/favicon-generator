@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link id="favicon" rel="icon" href="https://raw.githubusercontent.com/incubated-geek-cc/custom-favicon-generator/main/favicon.ico" type="image/x-icon">
+    <title>favicon generator</title>
+</head>
+<body>
+    <div class="container-fluid">
+    <div id="faviconHTMLCodeSnippet"></div>
+       <hr>
+       <p id="outputArea" class="text-danger-small"></p>
+       <div class="row">
+      <div class="col-sm-4 col-12">
+          <div class="card rounded-0">
+           <div class="card-header p-1"><strong>update image file</strong></div>
+           <div class="card-body p-1 content-scrollable">
+            <button id="bfileBtn" class="btn btn-sm btn-outline-secondary rouned-0" type="button"> select file <input id="bfile" type="file" accept="image/*"></button>
+            <p id="curFileInput"></p>
+           </div>
+          </div>
+      </div>
+      <div class="col-sm-4 col-12">
+      <div class="card rounded-0">
+      <div class="card-header p-1"><strong>icon dimension</strong></div>
+      <div class="card-body p-1 content-scrollable">
+     <div class="row">
+      <div class="col-12 col-sm-12">
+       <div class="container">
+       <form id="bIconSizeForm">
+         <div class="custom-control custom-switch">
+          <input id="isize_1" type="checkbox" class="isize custom-control-input" name="bIcosize" value="16" checked>
+          <label class="custom-control-label" for="isize_1" >16 x 16<smal class="text-muted"> browser tabs</smal> </label>
+         </div>
+         <div class="custom-control custom-switch">
+            <input id="isize_2" type="checkbox" class="isize custom-control-input" name="bIcosize" value="32" checked>
+            <label class="custom-control-label" for="isize_2" >32 x 32<smal class="text-muted"> taskbar</smal> </label>
+           </div>
+           <div class="custom-control custom-switch">
+            <input id="isize_3" type="checkbox" class="isize custom-control-input" name="bIcosize" value="48" checked>
+            <label class="custom-control-label" for="isize_3" >48 x 48<smal class="text-muted"> desktop url</smal> </label>
+           </div>
+           <div class="custom-control custom-switch">
+            <input id="isize_4" type="checkbox" class="isize custom-control-input" name="bIcosize" value="64" checked>
+            <label class="custom-control-label" for="isize_4" >64 x 64 </label>
+           </div>
+           <div class="custom-control custom-switch">
+            <input id="isize_5" type="checkbox" class="isize custom-control-input" name="bIcosize" value="128" checked>
+            <label class="custom-control-label" for="isize_5" >128 x 128 </label>
+           </div>
+           <div class="custom-control custom-switch">
+            <input id="isize_6" type="checkbox" class="isize custom-control-input" name="bIcosize" value="256" checked>
+            <label class="custom-control-label" for="isize_6" >256 x 256 </label>
+           </div>
+       </form>
+       <hr>
+       <button id="convertBtn" class="btn btn-sm btn-outline-dark rounded-0 pt-1 pb-1 float-right" type="button">convert</button>
+       </div>
+      </div>
+     </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-sm-4 col-12">
+        <div class="card rounded-0">
+            <div class="card-header p-1"><strong>generated <abbr title="Favourites Icon">favicon.ico</abbr>(s)</div>
+                <div class="card-body p-1 content-scrollable">
+                    <p id="imagelist"></p>
+                </div>
+        </div>
+      </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
